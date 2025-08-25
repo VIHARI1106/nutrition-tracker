@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.db
+*.sqlite3
+*.log
+
+# Virtual environment
+.venv/
+env/
+venv/
+
+# VS Code
+.vscode/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Node / Angular
+node_modules/
+dist/
+build/
+
+# Environment variables
+*.env
+
+# OS specific
+.DS_Store
+Thumbs.db
