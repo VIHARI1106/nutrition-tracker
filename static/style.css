@@ -1,0 +1,14 @@
+body { font-family: sans-serif; background: #f8fafc; margin: 0; }
+.header { background: #2563eb; color: white; padding: 1rem; text-align: center; }
+.container { max-width: 900px; margin: auto; padding: 1rem; }
+.card { background: white; padding: 1rem; margin: 1rem 0; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+.search-row { display: flex; gap: 0.5rem; }
+.results, .log-list { display: flex; flex-direction: column; gap: 0.5rem; }
+.result-item, .log-item { display: flex; gap: 0.5rem; align-items: center; justify-content: space-between; padding: 0.5rem; border: 1px solid #e5e7eb; border-radius: 6px; background: #f9fafb; }
+button { cursor: pointer; padding: 0.4rem 0.8rem; border: none; background: #2563eb; color: white; border-radius: 4px; }
+button:hover { background: #1e40af; }
+.totals { display: flex; gap: 1rem; justify-content: space-around; margin-bottom: 1rem; }
+.total-box { text-align: center; background: #f3f4f6; padding: 0.5rem 1rem; border-radius: 6px; }
+.footer { text-align: center; padding: 1rem; color: #6b7280; }
+canvas { max-width: 100%; height: auto; }
+#monthlyChart { margin-top: 1rem; }

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Nutrition Tracker</title>
+  <link rel="stylesheet" href="/static/style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <header class="header"><h1>Nutrition Tracker</h1></header>
+
+  <main class="container">
+    <!-- Date Picker -->
+    <section class="card">
+      <h2>Select Date</h2>
+      <input type="date" id="datePicker" />
+    </section>
+
+    <!-- Search -->
+    <section class="card">
+      <h2>Search Foods</h2>
+      <div class="search-row">
+        <input id="searchInput" type="text" placeholder="e.g. apple, dosa..." />
+        <button id="searchBtn">Search</button>
+      </div>
+      <div id="results" class="results"></div>
+    </section>
+
+    <!-- Logs -->
+    <section class="card">
+      <h2>Logs</h2>
+      <div id="logList" class="log-list"></div>
+    </section>
+
+    <!-- Dashboard -->
+    <section class="card">
+      <h2>Daily Dashboard</h2>
+      <div class="totals">
+        <div class="total-box"><span id="calTotal">0</span><small>Calories</small></div>
+        <div class="total-box"><span id="proTotal">0</span><small>Protein</small></div>
+        <div class="total-box"><span id="fatTotal">0</span><small>Fat</small></div>
+        <div class="total-box"><span id="carbTotal">0</span><small>Carbs</small></div>
+      </div>
+      <canvas id="dailyBarChart"></canvas>
+      <canvas id="dailyPieChart"></canvas>
+    </section>
+
+    <!-- Trends -->
+    <section class="card">
+      <h2>Calorie Trends</h2>
+      <canvas id="trendChart"></canvas>
+      <h3>Monthly Totals</h3>
+      <canvas id="monthlyChart"></canvas>
+      <button id="exportBtn">📥 Export CSV</button>
+    </section>
+  </main>
+
+  <footer class="footer"><small>Demo build</small></footer>
+
+  <script src="/static/script.js"></script>
+</body>
+</html>
